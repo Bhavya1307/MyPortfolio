@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-family: "Montserrat",sans-serif;
+    box-shadow: 0 0 10px 2px rgb(255, 77, 0);
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 300px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nav a {
+    color: rgb(255, 77, 0);
+    text-shadow: 0.5px 0.5px 3px rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ffd900;
+    text-shadow: 0.5px 0.5px 5px white;
+  }
