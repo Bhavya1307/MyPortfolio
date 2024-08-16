@@ -1,3 +1,4 @@
+/* Importing components */
 import React from 'react';
 import '../../public/css/Footer.css';
 import logo from '../assets/logo.jpg';
@@ -31,4 +32,5 @@ const Footer = () => {
     );
 };
 
+/* Exporting Footer */
 export default Footer;

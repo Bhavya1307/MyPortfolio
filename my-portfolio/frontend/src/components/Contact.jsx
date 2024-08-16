@@ -1,3 +1,4 @@
+/* Importing components */
 import React from 'react';
 import '../../public/css/Contact.css';
 
@@ -59,4 +60,5 @@ const Contact = () => {
     );
 };
 
+/* Exporting Contact */
 export default Contact;

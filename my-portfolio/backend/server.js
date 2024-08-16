@@ -1,4 +1,4 @@
-// backend/server.js
+// Declaring thnigs to use
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
+// Connecting to MongoDB
 async function connectToDatabase() {
     try {
         await mongoose.connect(process.env.MONGO_URI);
@@ -20,7 +20,7 @@ async function connectToDatabase() {
 
 connectToDatabase();
 
-// Define a Project model
+// Defining a Project model
 const Project = mongoose.model('Project', new mongoose.Schema({
     project_name: String,
     project_thumbnail: String,
@@ -29,7 +29,7 @@ const Project = mongoose.model('Project', new mongoose.Schema({
     project_languages: String,
 }));
 
-// Define a Experience model
+// Defining an Experience model
 const Experience = mongoose.model('Experience', new mongoose.Schema({
     job_title: String,
     job_location: String,
@@ -37,7 +37,7 @@ const Experience = mongoose.model('Experience', new mongoose.Schema({
     job_description: String
 }));
 
-// Define a Education model
+// Defining an Education model
 const Education = mongoose.model('Education', new mongoose.Schema({
     education_title: String,
     education_location: String,

@@ -1,22 +1,25 @@
+/* Importing components */
 import React, { useEffect, useState } from 'react';
 import '../../public/css/About.css';
 import { Link } from 'react-router-dom';
 
 const About = () => {
 
+  // Fetching experiences from mongodb
   const [experiences, setExperiences] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/experiences') // Adjust the URL to your API endpoint
+    fetch('http://localhost:5000/api/experiences')
       .then(response => response.json())
       .then(data => setExperiences(data))
       .catch(error => console.error('Error fetching experiences:', error));
   }, []);
 
+  // Fetching educations from mongodb
   const [educations, setEducations] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/educations') // Adjust the URL to your API endpoint
+    fetch('http://localhost:5000/api/educations')
       .then(response => response.json())
       .then(data => setEducations(data))
       .catch(error => console.error('Error fetching experiences:', error));
@@ -91,4 +94,5 @@ const About = () => {
   )
 }
 
+/* Exporting About */
 export default About;

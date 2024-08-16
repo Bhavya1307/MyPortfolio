@@ -1,3 +1,4 @@
+/* Importing components */
 import Bhavya from '../assets/Bhavya.jpg';
 import React, { useEffect, useState } from 'react';
 import '../../public/css/Home.css';
@@ -5,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
 
+  // Fetching projects from mongodb
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -125,4 +127,5 @@ const Home = () => {
   );
 };
 
+/* Exporting Home */
 export default Home;

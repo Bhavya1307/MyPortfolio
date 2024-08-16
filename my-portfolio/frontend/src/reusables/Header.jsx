@@ -1,3 +1,4 @@
+/* Importing components */
 import React from 'react';
 import '../../public/css/Header.css';
 import logo from '../assets/logo.jpg';
@@ -11,7 +12,7 @@ const Header = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="logo of text 'BHAVYA' in white color and some orange shadow" />
                     </div>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
@@ -21,4 +22,5 @@ const Header = () => {
     );
 };
 
+/* Exporting Header */
 export default Header;
