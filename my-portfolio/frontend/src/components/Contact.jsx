@@ -10,7 +10,7 @@ const Contact = () => {
             </div>
 
             <div className="contact-form-section">
-                <form className="contact-form">
+                <form className="contact-form" action='/contact'>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input type="text" id="name" name="name" required />

@@ -8,9 +8,9 @@ const Home = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/projects') // Adjust the URL to your API endpoint
+    fetch('http://localhost:5000/api/projects')
       .then(response => response.json())
-      .then(data => setProjects(data.slice(0, 2))) // Limit to 2 projects
+      .then(data => setProjects(data.slice(0, 2)))
       .catch(error => console.error('Error fetching projects:', error));
   }, []);
 
