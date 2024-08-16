@@ -29,10 +29,38 @@ const Project = mongoose.model('Project', new mongoose.Schema({
     project_languages: String,
 }));
 
+// Define a Experience model
+const Experience = mongoose.model('Experience', new mongoose.Schema({
+    job_title: String,
+    job_location: String,
+    duration: String,
+    job_description: String
+}));
+
+// Define a Education model
+const Education = mongoose.model('Education', new mongoose.Schema({
+    education_title: String,
+    education_location: String,
+    duration: String,
+    score: String
+}));
+
 // API endpoint to get projects
 app.get('/api/projects', async (req, res) => {
     const projects = await Project.find();
     res.json(projects);
+});
+
+// API endpoint to get experiences
+app.get('/api/experiences', async (req, res) => {
+    const experiences = await Experience.find();
+    res.json(experiences);
+});
+
+// API endpoint to get experiences
+app.get('/api/educations', async (req, res) => {
+    const educations = await Education.find();
+    res.json(educations);
 });
 
 const PORT = process.env.PORT || 5000;

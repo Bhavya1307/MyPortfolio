@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Header from './reusables/Header';
 import About from './components/About';
 import Footer from './reusables/Footer';
+import Contact from './components/Contact';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </Router>
