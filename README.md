@@ -1,4 +1,4 @@
-You can check out my portfolio at https://bhavyas-portfolio.vercel.app/
+You can check out my portfolio at https://bhavyas-portfolio.vercel.app/ (It is just for frontend. I am still working on deploying my backend.)
 
 # My Portfolio
 
