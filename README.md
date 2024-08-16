@@ -9,8 +9,6 @@ Welcome to my portfolio! This project showcases my work as a web developer, incl
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -45,6 +43,8 @@ To run this project locally, follow these steps:
    ```bash
    cd backend
    npm install
+
+## Usage
 
 To start the frontend and backend servers, follow these commands in separate terminal windows:
 
